@@ -43,6 +43,12 @@
 
 ![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-F80000?style=flat-square&logo=oracle&logoColor=white)
 
+## 🏗 System Architecture
+
+<div align="center">
+  <img src="./docs/assets/System Architecture.drawio.png" width="80%"/>
+</div>
+
 ## ✨ 주요 기능
 
 <div align="center">

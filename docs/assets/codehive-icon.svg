@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="40" fill="#1a1a2e"/>
+  
+  <!-- 외부 헥사곤 -->
+  <polygon points="100,20 163,57 163,131 100,168 37,131 37,57" fill="none" stroke="#FFB300" stroke-width="3"/>
+  
+  <!-- 내부 헥사곤 -->
+  <polygon points="100,42 141,65 141,111 100,134 59,111 59,65" fill="#FFB300" opacity="0.1"/>
+  <polygon points="100,42 141,65 141,111 100,134 59,111 59,65" fill="none" stroke="#FFB300" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- 벌 몸통 -->
+  <ellipse cx="100" cy="95" rx="18" ry="24" fill="#FFB300"/>
+  
+  <!-- 머리 -->
+  <ellipse cx="100" cy="68" rx="13" ry="13" fill="#FFB300"/>
+  
+  <!-- 눈 -->
+  <ellipse cx="95" cy="65" rx="2.5" ry="2.5" fill="#1a1a2e"/>
+  <ellipse cx="105" cy="65" rx="2.5" ry="2.5" fill="#1a1a2e"/>
+
+  <!-- 줄무늬 -->
+  <rect x="83" y="86" width="34" height="5" rx="2.5" fill="#1a1a2e" opacity="0.5"/>
+  <rect x="83" y="96" width="34" height="5" rx="2.5" fill="#1a1a2e" opacity="0.5"/>
+  <rect x="83" y="106" width="34" height="5" rx="2.5" fill="#1a1a2e" opacity="0.5"/>
+
+  <!-- 날개 왼쪽 -->
+  <ellipse cx="68" cy="75" rx="18" ry="10" fill="white" opacity="0.35" transform="rotate(-30,68,75)"/>
+  <!-- 날개 오른쪽 -->
+  <ellipse cx="132" cy="75" rx="18" ry="10" fill="white" opacity="0.35" transform="rotate(30,132,75)"/>
+
+  <!-- 더듬이 -->
+  <line x1="93" y1="56" x2="85" y2="44" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <line x1="107" y1="56" x2="115" y2="44" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="84" cy="42" r="3" fill="#FFB300"/>
+  <circle cx="116" cy="42" r="3" fill="#FFB300"/>
+</svg>
