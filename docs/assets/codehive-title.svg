@@ -1,0 +1,31 @@
+<svg width="680" height="240" viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="680" height="240" rx="16" fill="#0D1117"/>
+
+  <!-- 장식 헥사곤들 -->
+  <polygon points="60,65 75,56 90,65 90,83 75,92 60,83" fill="none" stroke="#FFB300" stroke-width="1" opacity="0.2"/>
+  <polygon points="590,45 605,36 620,45 620,63 605,72 590,63" fill="none" stroke="#FFB300" stroke-width="1" opacity="0.2"/>
+  <polygon points="575,100 585,94 595,100 595,112 585,118 575,112" fill="none" stroke="#FFB300" stroke-width="0.8" opacity="0.15"/>
+  <polygon points="85,110 95,104 105,110 105,122 95,128 85,122" fill="none" stroke="#FFB300" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- 벌 아이콘 -->
+  <g transform="translate(340, 85)">
+    <polygon points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" fill="none" stroke="#FFB300" stroke-width="2"/>
+    <polygon points="0,-16 14,-8 14,8 0,16 -14,8 -14,-8" fill="#FFB300" opacity="0.2"/>
+    <ellipse cx="0" cy="1" rx="8" ry="10" fill="#FFB300"/>
+    <ellipse cx="0" cy="-4" rx="6" ry="5" fill="#0D1117" opacity="0.55"/>
+    <ellipse cx="-12" cy="-3" rx="9" ry="5" fill="white" opacity="0.5" transform="rotate(-20,-12,-3)"/>
+    <ellipse cx="12" cy="-3" rx="9" ry="5" fill="white" opacity="0.5" transform="rotate(20,12,-3)"/>
+    <line x1="-6" y1="3" x2="6" y2="3" stroke="#0D1117" stroke-width="1.8"/>
+    <line x1="-7" y1="7" x2="7" y2="7" stroke="#0D1117" stroke-width="1.8"/>
+  </g>
+
+  <!-- 타이틀 -->
+  <text x="340" y="148" text-anchor="middle" font-family="monospace" font-size="42" font-weight="700" fill="#FFB300" letter-spacing="-2">Codehive</text>
+  <text x="340" y="175" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8B949E" letter-spacing="1">AI-powered code review community</text>
+
+  <!-- 구분선 -->
+  <line x1="200" y1="195" x2="480" y2="195" stroke="#FFB300" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- 서브텍스트 -->
+  <text x="340" y="218" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6E7681" letter-spacing="2">WHERE AI MEETS COMMUNITY</text>
+</svg>
