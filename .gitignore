@@ -51,3 +51,13 @@ logs/
 *.zip
 *.tar.gz
 *.rar
+
+
+# claude
+claude.md
+example.html
+
+# Frontend (Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
