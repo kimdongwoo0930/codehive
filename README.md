@@ -43,6 +43,15 @@
 ### Infra
 
 ![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-F80000?style=flat-square&logo=oracle&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+## 🏗 System Architecture
+
+<div align="center">
+  <img src="./docs/assets/System Architecture.drawio.png" width="80%"/>
+</div>
 
 ## ✨ 주요 기능
 
