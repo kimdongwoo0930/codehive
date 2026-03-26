@@ -33,6 +33,7 @@
 ### DB
 
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![H2](https://img.shields.io/badge/H2-09476B?style=flat-square&logoColor=white)
 
 ### AI
@@ -62,6 +63,7 @@
 | 👥 **커뮤니티 리뷰** | 다른 개발자들이 추가 리뷰 및 댓글 작성 |
 | 👍 **좋아요 / 추천** | 유용한 리뷰에 추천 기능 |
 | 🔐 **회원가입 / 로그인** | JWT 기반 인증 시스템 |
+| 📧 **이메일 인증** | 회원가입 시 이메일 인증 코드 발송 (Redis TTL 관리) |
 | 📜 **리뷰 히스토리** | 내가 올린 코드와 받은 리뷰 모아보기 |
  
 </div>
