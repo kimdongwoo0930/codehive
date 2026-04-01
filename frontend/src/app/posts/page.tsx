@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { dummyPosts } from '@/lib/dummyData'
 import PostCard from '@/components/post/PostCard'
 import Link from 'next/link'
@@ -10,6 +10,20 @@ const languages = ['전체', 'Java', 'Python', 'TypeScript', 'JavaScript', 'Go',
 export default function PostsPage() {
   const [selectedLanguage, setSelectedLanguage] = useState('전체')
   const [searchQuery, setSearchQuery] = useState('')
+  const [gridKey, setGridKey] = useState(0)
+  const gridTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  function handleFilterChange(lang: string) {
+    setSelectedLanguage(lang)
+    if (gridTimer.current) clearTimeout(gridTimer.current)
+    gridTimer.current = setTimeout(() => setGridKey((k) => k + 1), 10)
+  }
+
+  function handleSearchChange(value: string) {
+    setSearchQuery(value)
+    if (gridTimer.current) clearTimeout(gridTimer.current)
+    gridTimer.current = setTimeout(() => setGridKey((k) => k + 1), 300)
+  }
 
   // TODO: const res = await fetch(`/api/posts?language=${selectedLanguage}&q=${searchQuery}`)
   // TODO: const posts = await res.json()
@@ -33,6 +47,7 @@ export default function PostsPage() {
     >
       {/* Header */}
       <div
+        className="animate-fade-in-up"
         style={{
           display: 'flex',
           alignItems: 'flex-start',
@@ -40,6 +55,7 @@ export default function PostsPage() {
           marginBottom: '36px',
           flexWrap: 'wrap',
           gap: '16px',
+          animationDelay: '0.05s',
         }}
       >
         <div>
@@ -82,7 +98,7 @@ export default function PostsPage() {
       </div>
 
       {/* Search */}
-      <div style={{ marginBottom: '20px' }}>
+      <div className="animate-fade-in-up" style={{ marginBottom: '20px', animationDelay: '0.2s' }}>
         <div
           style={{
             display: 'flex',
@@ -103,7 +119,7 @@ export default function PostsPage() {
             type="text"
             placeholder="제목, 언어, 설명으로 검색..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => handleSearchChange(e.target.value)}
             style={{
               flex: 1,
               background: 'transparent',
@@ -137,17 +153,19 @@ export default function PostsPage() {
 
       {/* Language filter tabs */}
       <div
+        className="animate-fade-in-up"
         style={{
           display: 'flex',
           gap: '6px',
           flexWrap: 'wrap',
           marginBottom: '28px',
+          animationDelay: '0.35s',
         }}
       >
         {languages.map((lang) => (
           <button
             key={lang}
-            onClick={() => setSelectedLanguage(lang)}
+            onClick={() => handleFilterChange(lang)}
             style={{
               padding: '6px 14px',
               borderRadius: '20px',
@@ -168,6 +186,7 @@ export default function PostsPage() {
       {/* Posts grid */}
       {filteredPosts.length > 0 ? (
         <div
+          key={gridKey}
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
@@ -175,8 +194,14 @@ export default function PostsPage() {
           }}
           className="post-list-grid"
         >
-          {filteredPosts.map((post) => (
-            <PostCard key={post.id} post={post} />
+          {filteredPosts.map((post, i) => (
+            <div
+              key={post.id}
+              className="animate-fade-in-up"
+              style={{ animationDelay: `${0.05 * i}s` }}
+            >
+              <PostCard post={post} />
+            </div>
           ))}
         </div>
       ) : (

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { dummyPosts } from '@/lib/dummyData'
 import PostCard from '@/components/post/PostCard'
+import FeatureCards from '@/components/ui/FeatureCards'
 
 export default function HomePage() {
   // TODO: const res = await fetch('/api/posts?limit=4')
@@ -69,6 +70,7 @@ export default function HomePage() {
             )
           })
         )}
+
       </svg>
 
       {/* Hero Section */}
@@ -88,7 +90,7 @@ export default function HomePage() {
         {/* Left: Text content */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           {/* Badge */}
-          <div style={{ display: 'inline-flex' }}>
+          <div className="animate-fade-in-up" style={{ display: 'inline-flex', animationDelay: '0.1s' }}>
             <span
               style={{
                 display: 'inline-flex',
@@ -101,7 +103,6 @@ export default function HomePage() {
                 backgroundColor: 'rgba(255, 179, 0, 0.1)',
                 color: '#FFB300',
                 border: '1px solid rgba(255, 179, 0, 0.25)',
-                fontFamily: "'JetBrains Mono', monospace",
               }}
             >
               ✨ AI 기반 코드 리뷰 플랫폼
@@ -119,19 +120,23 @@ export default function HomePage() {
               letterSpacing: '-1px',
             }}
           >
-            코드를 공유하고
-            <br />
-            <span style={{ color: '#FFB300' }}>AI 리뷰</span>를
-            받으세요
+            <span className="animate-fade-in-up" style={{ display: 'block', animationDelay: '0.3s' }}>
+              코드를 공유하고
+            </span>
+            <span className="animate-fade-in-up" style={{ display: 'block', animationDelay: '0.55s' }}>
+              <span style={{ color: '#FFB300' }}>AI 리뷰</span>를 받으세요
+            </span>
           </h1>
 
           {/* Description */}
           <p
+            className="animate-fade-in-up"
             style={{
               margin: 0,
               fontSize: '17px',
               color: '#8b949e',
               lineHeight: '1.8',
+              animationDelay: '0.75s',
             }}
           >
             Codehive는 개발자들이 코드를 공유하고 AI와 커뮤니티로부터
@@ -140,7 +145,7 @@ export default function HomePage() {
           </p>
 
           {/* CTA Buttons */}
-          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+          <div className="animate-fade-in-up" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', animationDelay: '0.9s' }}>
             <Link
               href="/posts/new"
               style={{
@@ -189,7 +194,7 @@ export default function HomePage() {
         </div>
 
         {/* Right: Code preview card */}
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className="animate-fade-in-up" style={{ display: 'flex', flexDirection: 'column', animationDelay: '0.4s' }}>
           <div
             style={{
               backgroundColor: '#161b22',
@@ -218,7 +223,6 @@ export default function HomePage() {
                 style={{
                   fontSize: '12px',
                   color: '#8b949e',
-                  fontFamily: "'JetBrains Mono', monospace",
                   marginLeft: '8px',
                 }}
               >
@@ -289,9 +293,8 @@ export default function HomePage() {
               <span
                 style={{
                   fontSize: '13px',
-                  fontWeight: '700',
+                  fontWeight: '800',
                   color: '#FFB300',
-                  fontFamily: "'JetBrains Mono', monospace",
                 }}
               >
                 AI 코드 리뷰
@@ -436,89 +439,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '20px',
-          }}
-        >
-          {[
-            {
-              icon: '🤖',
-              title: 'AI 즉시 리뷰',
-              description:
-                '코드를 제출하는 순간 AI가 버그, 성능 문제, 보안 취약점, 코드 스타일을 분석하여 즉각적인 피드백을 제공합니다.',
-              highlight: '평균 2초 이내 응답',
-            },
-            {
-              icon: '👥',
-              title: '커뮤니티 리뷰',
-              description:
-                '경험 많은 개발자들로부터 심층적인 코드 리뷰를 받으세요. 다양한 관점에서 코드의 품질을 높일 수 있습니다.',
-              highlight: '전문 개발자 커뮤니티',
-            },
-            {
-              icon: '📈',
-              title: '성장 히스토리',
-              description:
-                '내가 받은 리뷰와 제출한 코드를 한눈에 확인하세요. 시간에 따른 코드 품질 향상을 추적할 수 있습니다.',
-              highlight: '성장 트래킹',
-            },
-          ].map((feature) => (
-            <div
-              key={feature.title}
-              style={{
-                backgroundColor: '#161b22',
-                border: '1px solid #30363d',
-                borderRadius: '12px',
-                padding: '28px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '16px',
-              }}
-            >
-              <div style={{ fontSize: '36px' }}>{feature.icon}</div>
-              <div>
-                <h3
-                  style={{
-                    margin: '0 0 8px',
-                    fontSize: '18px',
-                    fontWeight: '700',
-                    color: '#e6edf3',
-                  }}
-                >
-                  {feature.title}
-                </h3>
-                <p
-                  style={{
-                    margin: 0,
-                    fontSize: '14px',
-                    color: '#8b949e',
-                    lineHeight: '1.7',
-                  }}
-                >
-                  {feature.description}
-                </p>
-              </div>
-              <div
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  padding: '4px 10px',
-                  borderRadius: '6px',
-                  fontSize: '12px',
-                  fontWeight: '600',
-                  backgroundColor: 'rgba(255, 179, 0, 0.1)',
-                  color: '#FFB300',
-                  alignSelf: 'flex-start',
-                }}
-              >
-                {feature.highlight}
-              </div>
-            </div>
-          ))}
-        </div>
+        <FeatureCards />
       </section>
 
       {/* CTA Banner */}
