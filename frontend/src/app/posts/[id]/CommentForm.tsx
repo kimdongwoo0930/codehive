@@ -31,7 +31,6 @@ export default function CommentForm() {
           fontSize: '16px',
           fontWeight: '600',
           color: '#e6edf3',
-          fontFamily: "'JetBrains Mono', monospace",
         }}
       >
         <span style={{ color: '#FFB300' }}>{'// '}</span>

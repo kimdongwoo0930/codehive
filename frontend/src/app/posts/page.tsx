@@ -49,7 +49,6 @@ export default function PostsPage() {
               fontSize: '28px',
               fontWeight: '700',
               color: '#e6edf3',
-              fontFamily: "'JetBrains Mono', monospace",
             }}
           >
             <span style={{ color: '#FFB300' }}>{'// '}</span>
@@ -158,7 +157,6 @@ export default function PostsPage() {
               backgroundColor: selectedLanguage === lang ? 'rgba(255, 179, 0, 0.12)' : 'transparent',
               color: selectedLanguage === lang ? '#FFB300' : '#8b949e',
               cursor: 'pointer',
-              fontFamily: selectedLanguage === lang ? "'JetBrains Mono', monospace" : 'inherit',
               transition: 'all 0.15s',
             }}
           >

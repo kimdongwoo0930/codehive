@@ -116,14 +116,12 @@ export default function HomePage() {
               fontWeight: '800',
               lineHeight: '1.15',
               color: '#e6edf3',
-              fontFamily: "'JetBrains Mono', monospace",
               letterSpacing: '-1px',
             }}
           >
             코드를 공유하고
             <br />
             <span style={{ color: '#FFB300' }}>AI 리뷰</span>를
-            <br />
             받으세요
           </h1>
 
@@ -330,10 +328,11 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Divider */}
-      <div style={{ borderTop: '1px solid #21262d', margin: '0 24px' }} />
+      < div style={{ borderTop: '1px solid #21262d', margin: '0 24px' }
+      } />
 
       {/* Latest Reviews Feed */}
       <section
@@ -358,9 +357,9 @@ export default function HomePage() {
               style={{
                 margin: '0 0 8px',
                 fontSize: '26px',
-                fontWeight: '700',
+                fontWeight: '600',
                 color: '#e6edf3',
-                fontFamily: "'JetBrains Mono', monospace",
+
               }}
             >
               <span style={{ color: '#FFB300' }}>{'// '}</span>
@@ -427,7 +426,6 @@ export default function HomePage() {
               fontSize: '32px',
               fontWeight: '700',
               color: '#e6edf3',
-              fontFamily: "'JetBrains Mono', monospace",
             }}
           >
             <span style={{ color: '#FFB300' }}>{'// '}</span>
@@ -488,7 +486,6 @@ export default function HomePage() {
                     fontSize: '18px',
                     fontWeight: '700',
                     color: '#e6edf3',
-                    fontFamily: "'JetBrains Mono', monospace",
                   }}
                 >
                   {feature.title}
@@ -550,7 +547,6 @@ export default function HomePage() {
               fontSize: '28px',
               fontWeight: '700',
               color: '#e6edf3',
-              fontFamily: "'JetBrains Mono', monospace",
             }}
           >
             지금 바로 시작하세요
@@ -603,6 +599,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   )
 }

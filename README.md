@@ -6,7 +6,6 @@
  
 </div>
  
----
 
 ## 📌 프로젝트 소개
 
@@ -46,12 +45,20 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 ## 🏗 System Architecture
 
 <div align="center">
-  <img src="./docs/assets/System Architecture.drawio.png" width="80%"/>
+  <img src="./docs/assets/System Architecture.svg" width="80%"/>
+  
 </div>
+
+
+## 🗄 ERD < 수정중 >
+<img src="./docs/ERD/DB.png" width="80%"/>
+
+ 
 
 ## ✨ 주요 기능
 
@@ -62,14 +69,16 @@
 | 🤖 **AI 자동 리뷰** | 코드 업로드 시 Claude AI가 즉시 1차 리뷰 제공 |
 | 👥 **커뮤니티 리뷰** | 다른 개발자들이 추가 리뷰 및 댓글 작성 |
 | 👍 **좋아요 / 추천** | 유용한 리뷰에 추천 기능 |
-| 🔐 **회원가입 / 로그인** | JWT 기반 인증 시스템 |
+| 🔐 **인증 시스템** | JWT 기반 인증 시스템 |
+| 🐙 **회원가입 / 로그인** | 이메일 또는 GitHub OAuth 로그인 지원 |
 | 📧 **이메일 인증** | 회원가입 시 이메일 인증 코드 발송 (Redis TTL 관리) |
 | 📜 **리뷰 히스토리** | 내가 올린 코드와 받은 리뷰 모아보기 |
- 
+
 </div>
  
 <br/>
- 
+
+
 ## 📎 Docs
  
 <div align="center">
