@@ -44,7 +44,6 @@ export default function Footer() {
             <text
               x="100"
               y="62"
-              fontFamily="'JetBrains Mono', monospace"
               fontSize="36"
               fontWeight="700"
               fill="#FFB300"
@@ -76,7 +75,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p style={{ color: '#484f58', fontSize: '13px', margin: 0 }}>
-          © 2025 Codehive. AI 코드 리뷰 커뮤니티
+          © 2026 Codehive. AI 코드 리뷰 커뮤니티
         </p>
       </div>
     </footer>

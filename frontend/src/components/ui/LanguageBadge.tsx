@@ -35,7 +35,6 @@ export default function LanguageBadge({ language, size = 'md' }: LanguageBadgePr
         fontWeight: '600',
         backgroundColor: colors.bg,
         color: colors.color,
-        fontFamily: "'JetBrains Mono', monospace",
         letterSpacing: '0.02em',
       }}
     >

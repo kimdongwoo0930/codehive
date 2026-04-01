@@ -61,7 +61,6 @@ export default function Navbar() {
             <text
               x="100"
               y="62"
-              fontFamily="'JetBrains Mono', monospace"
               fontSize="36"
               fontWeight="700"
               fill="#FFB300"
