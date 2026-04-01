@@ -6,7 +6,6 @@
  
 </div>
  
----
 
 ## 📌 프로젝트 소개
 
@@ -55,6 +54,12 @@
   
 </div>
 
+
+## 🗄 ERD < 수정중 >
+<img src="./docs/ERD/DB.png" width="80%"/>
+
+ 
+
 ## ✨ 주요 기능
 
 <div align="center">
@@ -72,7 +77,8 @@
 </div>
  
 <br/>
- 
+
+
 ## 📎 Docs
  
 <div align="center">
