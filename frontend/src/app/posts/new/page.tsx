@@ -72,7 +72,6 @@ export default function NewPostPage() {
             fontSize: '28px',
             fontWeight: '700',
             color: '#e6edf3',
-            fontFamily: "'JetBrains Mono', monospace",
           }}
         >
           <span style={{ color: '#FFB300' }}>{'// '}</span>

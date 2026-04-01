@@ -54,7 +54,6 @@ export default function PostCard({ post }: PostCardProps) {
             fontSize: '16px',
             fontWeight: '600',
             color: '#e6edf3',
-            fontFamily: "'JetBrains Mono', monospace",
             lineHeight: '1.4',
           }}
         >

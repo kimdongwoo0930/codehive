@@ -85,7 +85,7 @@ export default async function PostDetailPage({
                 padding: '3px 10px',
                 borderRadius: '20px',
                 fontSize: '11px',
-                fontWeight: '600',
+                fontWeight: '700',
                 backgroundColor: 'rgba(255, 179, 0, 0.12)',
                 color: '#FFB300',
                 border: '1px solid rgba(255, 179, 0, 0.25)',
@@ -102,7 +102,6 @@ export default async function PostDetailPage({
             fontSize: '26px',
             fontWeight: '700',
             color: '#e6edf3',
-            fontFamily: "'JetBrains Mono', monospace",
             lineHeight: '1.4',
           }}
         >
@@ -187,9 +186,8 @@ export default async function PostDetailPage({
           style={{
             margin: '0 0 16px',
             fontSize: '16px',
-            fontWeight: '600',
+            fontWeight: '700',
             color: '#e6edf3',
-            fontFamily: "'JetBrains Mono', monospace",
           }}
         >
           <span style={{ color: '#FFB300' }}>{'// '}</span>
@@ -238,7 +236,6 @@ export default async function PostDetailPage({
                   fontSize: '15px',
                   fontWeight: '700',
                   color: '#FFB300',
-                  fontFamily: "'JetBrains Mono', monospace",
                 }}
               >
                 AI 코드 리뷰
@@ -277,10 +274,9 @@ export default async function PostDetailPage({
         <h2
           style={{
             margin: '0 0 16px',
-            fontSize: '16px',
+            fontSize: '18px',
             fontWeight: '600',
             color: '#e6edf3',
-            fontFamily: "'JetBrains Mono', monospace",
           }}
         >
           <span style={{ color: '#FFB300' }}>{'// '}</span>
@@ -303,6 +299,6 @@ export default async function PostDetailPage({
 
       {/* Comment Form */}
       <CommentForm />
-    </div>
+    </div >
   )
 }
